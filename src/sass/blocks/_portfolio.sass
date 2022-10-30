@@ -1,0 +1,21 @@
+.portfolio
+    padding-top: 120px
+    &__circle
+        position: relative
+        @include before_circle
+        &::before
+            top: -9px
+            left: 50%
+            transform: translateX(-50%)
+        
+    &__item
+        margin: 0 auto
+        img
+            width: 100%
+            height: 100%
+            object-position: cover  
+            transition: all 0.6s
+            margin-bottom: 20px
+            &:hover
+                transform: scale(1.03)
+                

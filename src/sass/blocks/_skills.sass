@@ -1,0 +1,25 @@
+.skills
+    padding-top: 100px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        width: 750px
+        margin: 0 auto
+    &__skill
+        display: flex
+    &__circle
+        @include before_circle
+        position: relative
+        &::before
+            top: -15%
+            left: -15px
+    &__text
+        width: 200px
+        margin-left: 20px
+    &__subtitle
+        font-size: 15px
+        font-weight: 700
+        margin-bottom: 10px
+    &__descr
+        font-size: 13px
+        
